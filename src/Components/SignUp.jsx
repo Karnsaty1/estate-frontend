@@ -18,7 +18,7 @@ export default function SignUp() {
       });
 
       if (!response.ok) {
-        console.log(response);
+         console.log('Error:', response.status, data);
       } else {
         setIsOtp(true); 
       }
