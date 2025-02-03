@@ -16,7 +16,7 @@ export default function SignUp() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(cred),
       });
-
+const data = await response.json(); 
       if (!response.ok) {
          console.log('Error:', response.status, data);
       } else {
